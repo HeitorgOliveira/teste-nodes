@@ -21,17 +21,17 @@ class Grafo:
 
 def main():
     grafo = Grafo()
-    heitor = Pessoa('Heitor', 1)
-    grafo.add_node(heitor)
-    marco = Pessoa('Marco', 2)
-    grafo.add_node(marco)
-    renato = Pessoa('Renato', 3)
-    grafo.add_node(renato)
+    a = Pessoa('a', 1)
+    grafo.add_node(a)
+    b = Pessoa('b', 2)
+    grafo.add_node(b)
+    c = Pessoa('c', 3)
+    grafo.add_node(c)
 
-    heitor.add_neighbor(marco, 10)
-    heitor.add_neighbor(renato, 15)
+    a.add_neighbor(b, 10)
+    a.add_neighbor(c, 15)
 
-    for i in heitor.neighbors:
+    for i in a.neighbors:
         print(i)
     
     for i in grafo.nodes:
