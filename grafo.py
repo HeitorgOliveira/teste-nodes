@@ -27,9 +27,29 @@ def main():
     grafo.add_node(b)
     c = Pessoa('c', 3)
     grafo.add_node(c)
+    d = Pessoa('d', 4)
+    grafo.add_node(d)
+    e = Pessoa('e', 1)
+    grafo.add_node(e)
+    f = Pessoa('f', 2)
+    grafo.add_node(f)
+    g = Pessoa('g', 3)
+    grafo.add_node(g)
+    h = Pessoa('h', 4)
+    grafo.add_node(h)
 
     a.add_neighbor(b, 10)
     a.add_neighbor(c, 15)
+    b.add_neighbor(d, 20)
+    b.add_neighbor(e, 20)
+    b.add_neighbor(g, 20)
+    c.add_neighbor(h, 10)
+    c.add_neighbor(f, 15)
+    d.add_neighbor(a, 15)
+    g.add_neighbor(c, 20)
+    e.add_neighbor(c, 15)
+    
+    
 
     for i in a.neighbors:
         print(i)
@@ -40,3 +60,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def encontrar(buffer, entrada, saida):
+    
